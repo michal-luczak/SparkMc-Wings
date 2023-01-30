@@ -1,0 +1,4 @@
+name: SparkMc-Wings
+version: '${project.version}'
+main: pl.sparkmc.sparkmcwings.SparkMcWings
+api-version: 1.16
