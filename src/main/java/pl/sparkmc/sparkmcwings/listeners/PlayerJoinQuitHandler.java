@@ -12,7 +12,7 @@ public class PlayerJoinQuitHandler implements Listener {
 
     @EventHandler
     public void handle(PlayerJoinEvent event) {
-        event.getPlayer().
+
     }
 
     @EventHandler

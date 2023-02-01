@@ -2,7 +2,7 @@ package pl.sparkmc.sparkmcwings.user.impl;
 
 import org.bukkit.entity.Player;
 import pl.sparkmc.sparkmcwings.user.User;
-import pl.sparkmc.sparkmcwings.wings.impl.Wings;
+import pl.sparkmc.sparkmcwings.wings.Wings;
 
 import java.util.Timer;
 
@@ -24,6 +24,7 @@ public class UserImpl implements User {
     public void giveWings(Wings wings) {
         this.wings = wings;
         //TODO task to flutter wings and set player passenger
+        //TODO save information about user in DB
     }
 
 

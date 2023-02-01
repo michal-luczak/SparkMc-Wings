@@ -3,7 +3,8 @@ package pl.sparkmc.sparkmcwings.data.factory.impl;
 import org.bukkit.entity.Player;
 import pl.sparkmc.sparkmcwings.data.factory.UserFactory;
 import pl.sparkmc.sparkmcwings.user.User;
-import pl.sparkmc.sparkmcwings.wings.impl.Wings;
+import pl.sparkmc.sparkmcwings.user.impl.UserImpl;
+import pl.sparkmc.sparkmcwings.wings.Wings;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +21,16 @@ public class UserFactoryImpl implements UserFactory {
     }
 
 
+    @Override
+    public void registerUser(Player player) {
+        User user = new UserImpl(player);
+        this.usersMap.put(player.getUniqueId(), user);
+    }
 
+    @Override
+    public void unregisterUser(User player) {
+        //TODO
+    }
 
 
 
